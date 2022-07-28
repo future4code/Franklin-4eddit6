@@ -13,7 +13,10 @@ export const Post = (props) => {
                     <Ups>{props.ups}</Ups>
                     <InteractionButton><TbArrowBigDown/></InteractionButton>
                 </Arrows>
-                <InteractionButton><TbMessageDots/></InteractionButton>
+                <Arrows>
+                    <InteractionButton><TbMessageDots/></InteractionButton>
+                    <Ups>{props.coments}</Ups>
+                </Arrows>
             </Buttons>
         </PostContainer>
     )

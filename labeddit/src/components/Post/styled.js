@@ -3,14 +3,14 @@ import styled from 'styled-components';
 export const PostContainer = styled.div`
     background-color: #FBFBFB;
     display: flex;
-    justify-content: center;
     flex-direction: column;
     width: 90%;
     padding: 1rem;
     box-sizing: border-box;
     border: 1px solid #E0E0E0;
     border-radius: 12px;
-
+    text-align: left;
+    margin-bottom: 7px;
 `
 
 export const UserName = styled.p`
@@ -31,6 +31,7 @@ export const Arrows = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-right: 10px;
 `
 
 export const Content = styled.p`
