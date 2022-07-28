@@ -1,8 +1,10 @@
 import React from 'react';
-import { GradientButton } from './styled';
+import { GradientButton, GradientButtonContainer } from './styled';
 
 export const Button = (props) => {
     return(
-        <GradientButton>{props.text}</GradientButton>
+        <GradientButtonContainer>
+            <GradientButton>{props.text}</GradientButton>
+        </GradientButtonContainer>
     )
 }
