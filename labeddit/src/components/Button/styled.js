@@ -7,6 +7,7 @@ export const GradientButtonContainer = styled.div`
     border-bottom: 2px solid transparent;
     border-image: linear-gradient(90deg, #FF6489, #F9B24E);
     border-image-slice: 1;
+    margin: 10px 5%;
 `
 
 export const GradientButton = styled.button`

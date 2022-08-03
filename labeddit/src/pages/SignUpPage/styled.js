@@ -3,13 +3,13 @@ import styled from 'styled-components';
 export const SignUpStyle = styled.div`
 @media (min-width: 500px) {
     width: 400px;
-    margin: 10px auto;
+    margin: 10px 5%;
   }
 `
 
 export const BoasVindas = styled.div`
 width: 90%;
-height: 300px;
+height: 250px;
 font-size: 33px;
 font-weight: 700;
 margin: 10px 5%;

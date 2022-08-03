@@ -1,11 +1,17 @@
 import styled from "styled-components";
 
 export const HeaderStyle = styled.header`
-width: 100%;
+width: 90%;
 height: 50px;
 background-color: #EDEDED;
 display: flex;
 align-items: center;
+margin-bottom: 10px;
+
+@media (min-width: 500px) {
+    width: 400px;
+    margin: 10px 5%;
+  }
 
 
 `
@@ -29,6 +35,15 @@ width: 50%;
 display: flex;
 justify-content: end;
 
+`
+
+export const ButtonHeaderBack = styled.button`
+font-size: 18px;
+font-weight: 600;
+font-family: Noto Sans, sans-serif;
+color: gray;
+border: 0;
+margin-left: 10px;
 
 `
 
@@ -38,6 +53,7 @@ font-weight: 600;
 font-family: Noto Sans, sans-serif;
 color: #4088CB;
 border: 0;
+margin-right: 5px;
 
 
 `

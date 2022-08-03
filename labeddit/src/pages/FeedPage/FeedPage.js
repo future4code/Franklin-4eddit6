@@ -5,6 +5,8 @@ import { Post } from '../../components/Post/Post';
 import * as S from './styled';
 import { TextareaComponent } from '../../components/Textarea/Textarea';
 import { BASE_URL } from '../../constants/url';
+import { Header } from '../../components/Header/Header';
+import { useNavigate } from 'react-router';
 
 
 
@@ -24,12 +26,19 @@ export const FeedPage = () => {
             }).catch((error) => {
                 console.log(error.response);
             })
-    
+
+            const navigate = useNavigate()
+            const goToLogin = () => {
+                navigate("/")
+            }
     
    
 
     return (
     <S.FeedPageContainer>
+        <Header 
+        onClick ={goToLogin}
+        text="Logout"/>
         <TextareaComponent placeholder='Escreva seu post...'/>
         <Button text='Postar'/>
         

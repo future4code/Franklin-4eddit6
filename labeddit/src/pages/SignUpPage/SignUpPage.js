@@ -16,7 +16,9 @@ export const SignUpPage = () => {
   const goToFeedPage = () => {
       navigate("/feed")
   }
-
+  const goToLogin = () => {
+    navigate("/")
+}
      
   const submitSignUp = () => {
       axios.post(`${BASE_URL}/users/signup`, form)
@@ -37,8 +39,12 @@ export const SignUpPage = () => {
       }
 //   
     return (
+        <>
+        <Header 
+        onClick ={goToLogin}
+        text="Entrar"/>
     <S.SignUpStyle>
-        <Header></Header>
+        
         <S.BoasVindas>
         <p>Olá, boas vindas ao LabEddit ;) </p>
         </S.BoasVindas>
@@ -89,5 +95,6 @@ export const SignUpPage = () => {
             text= 'Cadastrar'/>
             </S.FormStyle>
     </S.SignUpStyle>
+    </>
     )
 }
