@@ -6,8 +6,14 @@ export const Header = () => {
     return(
         <>
         <S.HeaderStyle>
+            <S.ImagemWrapper>
             <S.LabEdditImg src={logoLabbedit} alt='logo labEddit'/>
+            </S.ImagemWrapper>
+            
+            <S.ButtonWrapper>
             <S.ButtonHeader>Entrar</S.ButtonHeader>
+            </S.ButtonWrapper>
+           
 
         </S.HeaderStyle>
         </>

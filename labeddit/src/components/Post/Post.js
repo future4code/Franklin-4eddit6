@@ -1,8 +1,14 @@
 import React from 'react';
 import * as S from './styled';
 import {TbArrowBigTop, TbArrowBigDown, TbMessageDots} from 'react-icons/tb'
+import { useNavigate } from 'react-router';
 
 export const Post = (props) => {
+
+    const navigate = useNavigate()
+    const goToComment = () => {
+        navigate("/post")
+    }
     return(
         <S.PostContainer>
             <S.UserName>Enviado por: {props.userName}</S.UserName>
@@ -14,7 +20,7 @@ export const Post = (props) => {
                     <S.InteractionButton><TbArrowBigDown/></S.InteractionButton>
                 </S.Arrows>
                 <S.Arrows>
-                    <S.InteractionButton><TbMessageDots/></S.InteractionButton>
+                    <S.InteractionButton onClick={goToComment}><TbMessageDots/></S.InteractionButton>
                     <S.Ups>{props.coments}</S.Ups>
                 </S.Arrows>
             </S.Buttons>

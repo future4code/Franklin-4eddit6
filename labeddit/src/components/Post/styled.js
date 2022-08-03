@@ -4,13 +4,14 @@ export const PostContainer = styled.div`
     background-color: #FBFBFB;
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     padding: 1rem;
     box-sizing: border-box;
     border: 1px solid #E0E0E0;
     border-radius: 12px;
     text-align: left;
     margin-bottom: 7px;
+    
 `
 
 export const UserName = styled.p`
@@ -39,6 +40,7 @@ export const Content = styled.p`
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
+    height: 90%;
 `
 
 export const InteractionButton = styled.button`
