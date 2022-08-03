@@ -10,6 +10,8 @@
 - A página de login possui dois campos de texto: email e senha. 
 - Ao fazer o login, o usuário é redirecionado para a página de feed.
 - Layout da página de cadastro, feed e post.
+- Função de cadastro.
+- Integração dos posts com a API.
 
 ### O que não funciona
 
