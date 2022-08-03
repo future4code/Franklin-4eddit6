@@ -4,13 +4,15 @@ export const HeaderStyle = styled.header`
 width: 100%;
 height: 50px;
 background-color: #EDEDED;
-display: inline-flex;
+display: flex;
 `
 
 export const LabEdditImg = styled.img`
-width: 28px;
-margin: auto;
+height: 28px;
+display: flex;
 align-self: center;
+justify-content: center;
+margin: auto;
 `
 export const ButtonHeader = styled.button`
 font-size: 18px;

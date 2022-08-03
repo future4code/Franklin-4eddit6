@@ -1,23 +1,23 @@
 import React from 'react';
-import { PostContainer, UserName, Buttons, Content, InteractionButton, Ups, Arrows } from './styled';
+import * as S from './styled';
 import {TbArrowBigTop, TbArrowBigDown, TbMessageDots} from 'react-icons/tb'
 
 export const Post = (props) => {
     return(
-        <PostContainer>
-            <UserName>Enviado por: {props.userName}</UserName>
-            <Content>{props.content}</Content>
-            <Buttons>
-                <Arrows>
-                    <InteractionButton><TbArrowBigTop/></InteractionButton>
-                    <Ups>{props.ups}</Ups>
-                    <InteractionButton><TbArrowBigDown/></InteractionButton>
-                </Arrows>
-                <Arrows>
-                    <InteractionButton><TbMessageDots/></InteractionButton>
-                    <Ups>{props.coments}</Ups>
-                </Arrows>
-            </Buttons>
-        </PostContainer>
+        <S.PostContainer>
+            <S.UserName>Enviado por: {props.userName}</S.UserName>
+            <S.Content>{props.content}</S.Content>
+            <S.Buttons>
+                <S.Arrows>
+                    <S.InteractionButton><TbArrowBigTop/></S.InteractionButton>
+                    <S.Ups>{props.ups}</S.Ups>
+                    <S.InteractionButton><TbArrowBigDown/></S.InteractionButton>
+                </S.Arrows>
+                <S.Arrows>
+                    <S.InteractionButton><TbMessageDots/></S.InteractionButton>
+                    <S.Ups>{props.coments}</S.Ups>
+                </S.Arrows>
+            </S.Buttons>
+        </S.PostContainer>
     )
 }

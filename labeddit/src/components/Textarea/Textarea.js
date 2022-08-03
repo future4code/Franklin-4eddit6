@@ -1,8 +1,8 @@
 import React from "react";
-import { Textarea } from "./styled";
+import * as S from "./styled";
 
 export const TextareaComponent = (props) => {
     return(
-        <Textarea placeholder={props.placeholder}/>
+        <S.Textarea placeholder={props.placeholder}/>
     )
 }
