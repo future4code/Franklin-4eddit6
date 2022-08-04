@@ -27,20 +27,25 @@ export const FeedPage = () => {
                 console.log(error.response);
             })
 
-            const navigate = useNavigate()
-            const goToLogin = () => {
-                navigate("/")
-            }
+
+
+    const navigate = useNavigate()
+    const logout = () => {
+        console.log("sair")
+        localStorage.removeItem("token")
+        navigate("/")
+     }
     
    
 
     return (
     <S.FeedPageContainer>
         <Header 
-        onClick ={goToLogin}
+        onClick ={logout}
         text="Logout"/>
         <TextareaComponent placeholder='Escreva seu post...'/>
-        <Button text='Postar'/>
+        <Button 
+        text='Postar'/>
         
         <S.PostsContainer>
         <Post 

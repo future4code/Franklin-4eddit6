@@ -12,6 +12,7 @@ export const PostPage = () => {
         navigate("/feed")
     }
     const logout = () => {
+        localStorage.clear()
         navigate("/")
     }
     return (

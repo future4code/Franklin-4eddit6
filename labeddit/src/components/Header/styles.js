@@ -9,24 +9,19 @@ align-items: center;
 margin-bottom: 10px;
 
 @media (min-width: 500px) {
-    width: 400px;
+    width: 500px;
     margin: 10px 5%;
   }
-
-
 `
 export const ImagemWrapper = styled.div`
 
 width: 59%;
 display: flex;
 justify-content: end;
-
-
 `
 
 export const LabEdditImg = styled.img`
 height: 28px;
-
 
 `
 export const ButtonWrapper = styled.div`
