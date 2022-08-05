@@ -1,19 +1,19 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Button } from '../../components/Button/Button';
 import { Post } from '../../components/Post/Post';
 import * as S from './styled';
-import { TextareaComponent } from '../../components/Textarea/Textarea';
 import { BASE_URL } from '../../constants/url';
 import { Header } from '../../components/Header/Header';
 import { useNavigate } from 'react-router';
-
-
+import { TextareaComponent } from '../../components/Textarea/Textarea';
 
 export const FeedPage = () => {
 
     const [posts, setPosts] = useState([])
-  
+    
+    const [isPosted, setIsPosted] = useState(false)
+
+    const getPost = () => {
         axios.get(`${BASE_URL}/posts`, {
            
             headers: {
@@ -27,7 +27,8 @@ export const FeedPage = () => {
                 console.log(error.response);
             })
 
-
+    }
+  
 
     const navigate = useNavigate()
     const logout = () => {
@@ -35,17 +36,22 @@ export const FeedPage = () => {
         localStorage.removeItem("token")
         navigate("/")
      }
-    
-   
+     useEffect(( ) => {
+        getPost()
+     }, [
+        isPosted
+     ])
 
     return (
     <S.FeedPageContainer>
         <Header 
         onClick ={logout}
         text="Logout"/>
-        <TextareaComponent placeholder='Escreva seu post...'/>
-        <Button 
-        text='Postar'/>
+        <TextareaComponent
+        text = "Postar"
+         setIsPosted = {setIsPosted}
+         placeholder='Escreva seu post...'/>
+        
         
         <S.PostsContainer>
         <Post 

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Button } from '../../components/Button/Button';
 import { Post } from '../../components/Post/Post';
 import * as S from './styled';
 import { TextareaComponent } from '../../components/Textarea/Textarea';
@@ -29,9 +28,9 @@ export const PostPage = () => {
                 ups='1.2k'
             />
         </S.PostsContainer>
-        <TextareaComponent placeholder='Adicionar comentário...'/>
-        <Button 
-        text='Responder'/>
+        <TextareaComponent 
+        text='Responder'placeholder='Adicionar comentário...'/>
+       
     </S.PostPageContainer>
     )
 }

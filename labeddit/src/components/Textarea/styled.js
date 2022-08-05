@@ -1,6 +1,10 @@
 import styled from "styled-components"
 
-export const Textarea = styled.textarea`
+export const PostForm = styled.form`
+ width: 100%;
+`
+
+export const Textarea = styled.input`
     width: 90%;
     height: 8rem;
     background-color: #EDEDED;
