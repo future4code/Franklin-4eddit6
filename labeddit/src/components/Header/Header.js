@@ -16,8 +16,6 @@ export const Header = (props) => {
             <S.ButtonHeader onClick={props.onClick}>
                 {props.text}</S.ButtonHeader>
             </S.ButtonWrapper>
-           
-
         </S.HeaderStyle>
         </>
     )

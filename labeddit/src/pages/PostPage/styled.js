@@ -1,16 +1,14 @@
 import styled from 'styled-components';
 
 export const PostPageContainer = styled.div`
-    display: flex;
+     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 1rem;
-    width: 90%;
+    margin-top: 2rem;
 ` 
 
 export const PostsContainer = styled.div`
-    display: flex;
+    align-items: center;
     justify-content: center;
-    margin-bottom: 2px;
     width: 90%;
 `

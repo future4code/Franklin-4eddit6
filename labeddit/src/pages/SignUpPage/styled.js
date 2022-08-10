@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
 export const SignUpStyle = styled.div`
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
 @media (min-width: 500px) {
     width: 400px;
     margin: 10px 5%;

@@ -8,7 +8,7 @@ export const FeedPageContainer = styled.div`
 ` 
 
 export const PostsContainer = styled.div`
-    margin: 1rem 5%;
     align-items: center;
     justify-content: center;
+    width: 90%;
 `

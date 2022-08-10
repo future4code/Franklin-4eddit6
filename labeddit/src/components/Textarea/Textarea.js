@@ -20,7 +20,7 @@ export const TextareaComponent = (props) => {
           .then((response) => {
               clear()          
               props.setIsPosted(true)
-              alert("postado")
+              alert("postado", form)
           }).catch((error) => {
                 props.setIsPosted(false)
               console.log(error.response);
@@ -40,7 +40,7 @@ export const TextareaComponent = (props) => {
             <S.Textarea
             required
             autoFocus
-            placeholder='Escreva seu post...'
+            placeholder={props.placeholder}
             id="body"
             name="body"
             autoComplete="body"
